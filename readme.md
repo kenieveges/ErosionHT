@@ -14,9 +14,11 @@ The code is divided into two parts:
 </p>
 
 2) The second part is the simulation of the erosion. The simulation is done by iterating over the ideal (un-eroded) profile and calculating the erosion at each point. The erosion is calculated using the following equation:
+
 $$
 \Delta y = S_1(\alpha)\cdot S_2(\varepsilon_i)\cdot j_{\perp i} \cdot \Delta t \cdot \cos(\gamma_i),
 $$
+
 where $S_1(\alpha)$, $S_2(\varepsilon_i)$ - take into account the dependence of the sputtering coefficient of the wall material in at a given point on the angle of incidence of ions $\alpha$ and ion energy $\varepsilon$, $j_{\perp i}$ - is the ion flux density directed perpendicular to the surface at a given point, $\Delta t$ - is the time step, $\gamma_i$ - is the angle between the ion flux vector and the surface normal.
 For purpose of computing $\Delta y$ we need to calculate $\alpha_i$ and $\gamma_i$, since other parameters are known, or could be taken from the experimental data (that is already interpolated in the step 1). The angle $\alpha_i$ is calculated using the following Python code and as a block-scheme:
 
