@@ -22,7 +22,7 @@ For purpose of computing $\Delta y$ we need to calculate $\alpha_i$ and $\gamma_
 
 ### Block-scheme
 <p align="center">
-    <img src="./illustrations/block-scheme.png" alt="drawing" style="width:500px;"/>
+    <img src="./illustrations/block-scheme_frame.png" alt="drawing" style="width:600px;"/>
 </p>
 
 ### Python code
